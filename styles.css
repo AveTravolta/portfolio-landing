@@ -23,7 +23,8 @@ html, body {
   border-radius: 50%;
   overflow: hidden;
   position: relative;   /* ensures the image fits within the circle */
-  outline: 3px solid rgb(169, 143, 0)
+  outline: 3px solid rgb(169, 143, 0);
+  box-shadow: 8px 8px 13px rgba(0,0,0,0.2);
 }
 
 .avatar img {   
