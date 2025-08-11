@@ -1,0 +1,136 @@
+:root{
+  --bg: rgb(200, 200, 200);
+  --accent: #be0000;
+  --link: #0b66ff;
+  --text: #222;
+}
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+#profile-photo {
+  max-height: 1200px;   /* constrain height but keep proportions */
+  width: auto;
+  border-radius: 70%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.avatar {
+  width: 200px; /* final avatar width */
+  height: 200px; /* final avatar height */
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;   /* ensures the image fits within the circle */
+}
+
+.avatar img {   
+  position: absolute;
+  top: -195px;         /* move image up/down */
+  left: -240px;       /* move image left/right */
+  width: 400px;       /* keep it big so it fills circle */
+  height: auto;       /* maintain aspect ratio */
+}
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    gap: .5rem;
+    margin: 0;
+    padding: 0;
+}
+#name {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}  
+.subtitle {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.email:hover,
+.email:focus,
+.phone:hover,
+.phone:focus,
+.credentials a:hover,
+.credentials a:focus {
+  transform: scale(1.05) translateY(-2px);
+  transition: transform 0.3s ease;
+}
+
+/* To make sure the transition is smooth all the time */
+.email,
+.credentials a {
+  transition: transform 0.3s ease;
+  display: inline-block; /* necessary for transform */
+}            
+.credentials {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .5rem;
+}
+.email {
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+.phone{
+    font-size: 1.0rem;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+.phone a {
+  color: inherit;           /* same color as surrounding text */
+  text-decoration: none;    /* remove underline */
+  cursor: pointer;          /* shows it’s clickable */
+}
+
+.contact {
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(169, 143, 0);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.contactme {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.social-buttons img {
+  display: inline-block;
+  width: 40px;   /* or whatever size you want */
+  height: 40px;
+  object-fit: contain;  /* keep SVG aspect ratio */
+  margin: .5rem;
+}
+.social-buttons a img {
+  transition: transform 0.3s ease;
+}
+.social-buttons a:hover img {
+  transform: scale(1.1) translateY(-3px);
+}
