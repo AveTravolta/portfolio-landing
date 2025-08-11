@@ -23,6 +23,7 @@ html, body {
   border-radius: 50%;
   overflow: hidden;
   position: relative;   /* ensures the image fits within the circle */
+  outline: 3px solid rgb(169, 143, 0)
 }
 
 .avatar img {   
@@ -100,7 +101,6 @@ section {
   text-decoration: none;    /* remove underline */
   cursor: pointer;          /* shows it’s clickable */
 }
-
 .contact {
     text-align: left;
     font-size: 1rem;
