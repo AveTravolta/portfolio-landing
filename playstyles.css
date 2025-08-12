@@ -1,0 +1,53 @@
+
+
+
+
+
+
+/*practice combinators and pseudo*/
+/*combinators*/
+#combinators-pseudo .combinators li ul li {
+    background-color: red;
+}
+
+#combinators-pseudo .combinators > ul > li {
+    background-color: aqua;
+}
+
+#combinators-pseudo h2 + ul {
+    background-color: yellow;
+}
+
+#combinators-pseudo h2 ~ p {
+    background-color: gray;
+}
+
+/*pseduo classes*/
+#combinators-pseudo .card:hover{
+    transform: scale(1.01);
+    background-color: beige;
+}
+
+#combinators-pseudo .combinators li:first-child {           /*first child of any li*/
+    background-color: lightgreen;
+}
+
+#combinators-pseudo .combinators li:last-child {
+    background-color: lightcoral;
+}
+
+#combinators-pseudo .combinators li:nth-child(2) {
+    background-color: lightpink
+}
+
+#combinators-pseudo .decorated::before {
+    content: "(*) ";
+    color: gold;
+    font-size: 1.2em;
+}
+
+#combinators-pseudo .decorated::after {
+    content: " (end)";
+    color: gold;
+    font-size: 1.2em;
+}
