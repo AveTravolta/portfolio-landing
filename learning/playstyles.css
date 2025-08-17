@@ -1,0 +1,146 @@
+
+
+/*navbars*/
+h1{
+    text-align: center;
+    color: teal;
+}
+
+.navbar ul{
+    list-style: none;
+    background-color: teal;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: darkgrey;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: black;
+    color: teal;
+}
+
+.navbar li{
+    float: left;
+}
+
+/*dropdowns*/
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color:#b40000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 16px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color:#ff3a3a; 
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover .content{
+    display: block;
+}   
+
+.dropdown:hover button{
+    background-color:#ff7878
+}
+
+.dropdown a:hover{
+    background-color:#650000
+}
+
+/*pagination*/
+.pagination {
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block
+}
+
+.pagination a.active{
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: #b40000;
+    color: black;
+    border-radius: 10px;
+}
+
+
+/*practice combinators and pseudo*/
+/*combinators*/
+#combinators-pseudo .combinators li ul li {
+    background-color: red;
+}
+
+#combinators-pseudo .combinators > ul > li {
+    background-color: aqua;
+}
+
+#combinators-pseudo h2 + ul {
+    background-color: yellow;
+}
+
+#combinators-pseudo h2 ~ p {
+    background-color: gray;
+}
+
+/*pseduo classes*/
+#combinators-pseudo .card:hover{
+    transform: scale(1.01);
+    background-color: beige;
+}
+
+#combinators-pseudo .combinators li:first-child {           /*first child of any li*/
+    background-color: lightgreen;
+}
+
+#combinators-pseudo .combinators li:last-child {
+    background-color: lightcoral;
+}
+
+#combinators-pseudo .combinators li:nth-child(2) {
+    background-color: lightpink
+}
+
+#combinators-pseudo .decorated::before {
+    content: "(*) ";
+    color: gold;
+    font-size: 1.2em;
+}
+
+#combinators-pseudo .decorated::after {
+    content: " (end)";
+    color: gold;
+    font-size: 1.2em;
+}

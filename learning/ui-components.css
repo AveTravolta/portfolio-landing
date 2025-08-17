@@ -1,0 +1,96 @@
+/*my nav*/
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    background-color: black;
+    color: silver;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: silver;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rosybrown
+}
+
+.navbar li{
+    float: left;
+}
+
+/*my dropdown*/
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    border: none;
+    background-color: black;
+    color: silver;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    color: silver;
+    padding: 10px 15px;
+
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: rosybrown;
+}
+
+.dropdown a:hover{
+    background-color: rgb(39, 39, 39);
+    color: silver;
+}
+
+/*my pagination*/
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    color: silver;
+}
+
+.pagination a:hover{
+    background-color: black;
+    color: silver;
+    border-radius: 10px;
+}
+
+.pagination a.active{
+    background-color: rosybrown;
+    border-radius: 10px;
+}
