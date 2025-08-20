@@ -1,5 +1,161 @@
 
+body{
+    margin: 0px;
+}
 
+/*Animations*/
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: #650000;
+    font-size: 13em;
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+
+    /*opacity: 0%;*/
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(100%)}
+} 
+@keyframes slideRight{
+    to{transform: translateX(100%)}
+} 
+@keyframes slideUp{
+    from{transform: translateY(100%)}
+} 
+@keyframes slideDown{
+    to{transform: translateY(100%)}
+} 
+@keyframes rotate{
+    50%{transform: rotateZ(360deg)}
+} 
+@keyframes grow{
+    50%{transform: scale(2, 2)}
+}
+@keyframes shrink{
+    50%{transform: scale(.5, .5)}
+}
+@keyframes fade{
+    0%{opacity: 0}
+}
+@keyframes fadeIn{
+    50%{opacity: 1}
+}
+@keyframes colorChange{
+    0%{background-color: #650000;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}  
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+@keyframes glow{
+    50%{box-shadow: 0 0 50px yellow;}
+}
+
+
+/* Transformations 
+.box{
+    width:250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color:#4CAF50;
+
+    transform: translateX(50px) rotateZ(45deg) scale(0.7);
+}
+#box1{
+    background-color:#4CAF50;
+}
+#box2{
+    background-color: #650000;
+
+}
+#box3{
+    background-color: orange;
+
+}
+
+/*flexbox
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 18px;
+}
+
+#box1{
+    background-color: lightyellow;
+    align-self: center;
+}
+
+#box2{
+    background-color: lightblue;
+    align-self: end;
+    order: 
+}
+
+#box3{
+    background-color: lightgreen;
+    
+}
+
+#box4{
+    background-color: lightcoral;
+    align-self: center;
+} */
+
+/*layouts easy*/
+header{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: darkgoldenrod;
+    height: 50px;
+}
+
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;  
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 25px;
+}
 /*navbars*/
 h1{
     text-align: center;
@@ -79,7 +235,7 @@ h1{
 .pagination a{
     color: black;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 16px; 
     display: inline-block
 }
 
@@ -144,3 +300,4 @@ h1{
     color: gold;
     font-size: 1.2em;
 }
+
